@@ -1,0 +1,346 @@
+html,
+body,
+div,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+a,
+img,
+span,
+em,
+i,
+b,
+iframe,
+strong,
+label,
+input,
+select,
+textarea,
+button {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+html,body{height:100%;overflow: hidden;}
+html {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  font-size: .16rem;
+  color: #333;
+  background-color: #eee;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  outline: 0;
+  -webkit-touch-callout: none;
+  -webkit-transition: color 0.5s ease-in;
+  transition: color 0.5s ease-in;
+}
+input,
+select,
+textarea,
+button {
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+input {
+  background-color: transparent;
+}
+input:disabled {
+  background-color: #fff;
+}
+textarea {
+  resize: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+  -webkit-touch-callout: none;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+iframe {
+  border: 0;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+::-webkit-input-placeholder {
+  color: #999;
+}
+.cl {
+  zoom: 1;
+}
+.cl:after {
+  content: ".";
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+.pos-left,
+.pos-right {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: block;
+  line-height: .16rem;
+}
+.pos-left {
+  left: 0;
+}
+.pos-right {
+  right: 0;
+}
+.item {
+  position: relative;
+  display: block;
+  min-height: .18rem;
+  line-height: .18rem;
+}
+.item:hover {
+  color: #4d8cd9;
+}
+.item.ative {
+  color: #4d8cd9;
+}
+.item .pos-left {
+  top: .1rem;
+  left: .1rem;
+}
+.item .pos-right {
+  top: .1rem;
+  right: .1rem;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: #4d8cd9;
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.header .pos-left,
+.header .pos-right {
+  padding: .15rem .1rem;
+}
+.header .pos-left a,
+.header .pos-right a {
+  color: #4d8cd9;
+}
+.header .title {
+  height: .46rem;
+  padding: 0 ,5rem;
+  line-height: .46rem;
+  font-size: .2rem;
+  text-align: center;
+}
+.input-box {
+  position: relative;
+  display: block;
+  padding-left: .1rem;
+  padding-right: .26rem;
+  background-color: #fff;
+  border: 1px solid #ededed;
+  border-radius: .06rem;
+  -webkit-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
+}
+.input-box:hover {
+  border-color: #5e9df0;
+}
+.input-box .input {
+  width: 100%;
+  height: .18rem;
+  padding-top: .08rem;
+  padding-bottom: .06rem;
+  line-height: .18rem;    
+  font-size: .12rem;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+.input-box .i-left,
+.input-box .i-right {
+  position: absolute;
+  top: 0;
+  padding: .10rem .08rem;
+  line-height: .16rem;
+}
+.input-box .i-left {
+  left: 0;
+}
+.input-box .i-right {
+  right: 0;
+}
+.input-box .clear .icon {
+  margin-top: .03rem;
+}
+.input-focus {
+  border-color: #5e9df0;
+}
+.search-box {
+  position: relative;
+  padding: .06rem .1rem .06rem .50rem;
+}
+.search-box .pos-left {
+  top: .03rem;
+  padding: .12rem .1rem;
+  line-height: .16rem;
+  font-size:.14rem;
+}
+.search-box .input-box {
+  padding-left: .26rem; 
+}
+.search-box .i-search{
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(http://webmap1.map.bdstatic.com/wolfman/static/common/images/ui3/tools/suggestion-icon_013979b.png) no-repeat 0 -14px;
+}
+.listview {
+  position: relative;
+}
+.listview .item {
+  padding: .05rem .08rem .04rem .08rem;
+  font-size: .15rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ededed;
+}
+.listview .no-item{
+  padding:.1rem;
+  font-size: .15rem;
+  text-align:center;
+}
+.listview .item:hover {
+  background-color: #ededed;
+}
+.listview .item .address{
+  font-size: .13rem;
+  color: #666;
+}
+.listview .clear{
+  display: block;
+  padding: .08rem;
+  font-size:.15rem;
+  text-align:center; 
+}
+.listview .active{
+  color: #4d8cd9;
+}
+.bd-map {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 6;
+  width: 20px;
+  height: 26px;    
+  margin-top: -22px;
+  margin-left: -11px;
+}
+.marker b{
+  display:block;
+  width: 20px;
+  height: 26px;
+  background: url(http://api0.map.bdimg.com/images/marker_red_sprite.png) 0 0 no-repeat;
+}
+.anchorBL,.BMap_cpyCtrl{
+  display: none;
+}
+.search-section{
+  position: absolute;
+  top: .455rem;
+  bottom: 0;
+  left: 0;
+  right: 0;    
+  z-index: 99;
+  display: none;
+  background-color:#eee;
+  overflow-y:auto;
+}
+.geolocation{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 6;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border: 1px solid #d9d7d5;
+  border-radius: 100%;
+  box-shadow: 0 0 .01rem rgba(0, 0, 0, .1);
+}
+.geolocation b{
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: 5px auto 0 auto;
+  background: url(http://webmap2.map.bdstatic.com/wolfman/static/common/images/ipLocation/ipLocation_ac75181.png) -14px 0 no-repeat;
+}
+.geo-marker{
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: url(http://webmap2.map.bdstatic.com/wolfman/static/common/images/ipLocation/ipLocation_ac75181.png) 0 0 no-repeat;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html class="ie6"></html><![endif]-->
+<!--[if IE 7]>
+<html class="ie7"></html><![endif]-->
+<!--[if IE 8]>
+<html class="ie8"></html><![endif]-->
+<!--[if IE 9]>
+<html class="ie9"></html><![endif]-->
+<!--[if(gt IE 9)|!(IE)]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>首页</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable-style" content="blank">
+  <meta name="apple-mobile-web-app-title" content="">
+  <meta name="format-detection" content="telephone=no,email=no">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="css/index.css?v=20161110173104">
+  <!--[if lt IE 9]>
+    <script type="text/javscript" src="js/lib/html5shiv.js"></script>
+    <script type="text/javscript" src="js/lib/respond.js"></script><![endif]-->
+  <script src="js/lib/jquery.js"></script>
+  <script src="js/lib/store.js"></script>
+  <script src="js/lib/template.js"></script>
+  <script src="js/index.js?v=20161110173104"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="search-box">
+      <a class="pos-left">取消</a>
+      <div class="input-box">
+        <div class="i-left">
+          <b class="i-search"></b>
+        </div>
+        <input type="text" id="iSearch" class="input" placeholder="搜索地点">
+      </div>
+    </div>
+  </div>
+  <div id="J_bdMap" class="bd-map"></div>
+  <div id="J_bdResult" class="bd-result">
+    <div class="listview"></div>
+  </div>
+  <div class="marker">
+    <b></b>
+  </div>
+  <script id="J_listTmpl" type="text/html">
+      {{each list as json }}
+        <div class='item' data-lng='{{json.lng}}' data-lat='{{json.lat}}'>
+          <p class='title'>{{json.title}}</p>
+          <p class='address'>{{json.address}}</p>
+        </div>
+      {{/each}}
+    </script>
+  <div class="search-section">
+
+  </div>
+</body>
+
+</html>

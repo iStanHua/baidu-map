@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html class="ie6"></html><![endif]-->
+<!--[if IE 7]>
+<html class="ie7"></html><![endif]-->
+<!--[if IE 8]>
+<html class="ie8"></html><![endif]-->
+<!--[if IE 9]>
+<html class="ie9"></html><![endif]-->
+<!--[if(gt IE 9)|!(IE)]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>首页</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable-style" content="blank">
+  <meta name="apple-mobile-web-app-title" content="">
+  <meta name="format-detection" content="telephone=no,email=no">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="css/map.css?v=201611151158">
+  <!--[if lt IE 9]>
+    <script type="text/javscript" src="js/lib/html5shiv.js"></script>
+    <script type="text/javscript" src="js/lib/respond.js"></script><![endif]-->
+  <script src="js/lib/jquery.js"></script>
+  <script src="js/lib/store.js"></script>
+  <script src="js/lib/template.js"></script>
+  <script src="js/map.js?v=201611151158"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="search-box">
+      <a id="J_cancle" class="pos-left">取消</a>
+      <div class="input-box">
+        <div class="i-left">
+          <b class="i-search"></b>
+        </div>
+        <input type="text" id="iSearch" class="input" placeholder="搜索地点" />
+      </div>
+    </div>
+  </div>
+  <div id="J_bdMap" class="bd-map">
+  </div>
+  <div id="J_marker" class="marker"><b></b></div>
+  <div id="J_geolocation" class="geolocation"><b></b></div>
+  <div id="J_bdResult" class="bd-result">
+    <div class="listview">
+      <div class="no-item">正在加载中...</div>
+    </div>
+  </div>
+  <script id="J_listTmpl" type="text/html">
+      {{if list.length>0}}
+      {{each list as json }}
+        <div class='item{{json.active}}' data-lng='{{json.lng}}' data-lat='{{json.lat}}'>
+          <p class='name'>{{json.name}}</p>
+          <p class='address'>{{json.address}}</p>
+        </div>
+      {{/each}}
+      {{else}}
+        <div class='no-item'>暂无数据</div>
+      {{/if}}
+    </script>
+  <div class="search-section" id="J_searchSection">
+    <div id="J_searchResult" class="search-result">
+      <div class="listview">
+        <div class="no-item">暂无数据</div>
+      </div>
+    </div>
+    <div id="J_searchRecord" class="search-record">
+      <div class="listview">
+        <div class="no-item">暂无数据</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

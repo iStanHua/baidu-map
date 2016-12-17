@@ -1,0 +1,349 @@
+html,
+body,
+div,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+a,
+img,
+span,
+em,
+i,
+b,
+iframe,
+strong,
+label,
+input,
+select,
+textarea,
+button {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+html,body{height:100%;overflow: hidden;}
+html {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  outline: 0;
+  -webkit-touch-callout: none;
+  -webkit-transition: color 0.5s ease-in;
+  transition: color 0.5s ease-in;
+}
+input,
+select,
+textarea,
+button {
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+input {
+  background-color: transparent;
+}
+input:disabled {
+  background-color: #fff;
+}
+textarea {
+  resize: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+  -webkit-touch-callout: none;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+iframe {
+  border: 0;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+::-webkit-input-placeholder {
+  color: #999;
+}
+.cl {
+  zoom: 1;
+}
+.cl:after {
+  content: ".";
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+.pos-left,
+.pos-right {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: block;
+  line-height: 16px;
+}
+.pos-left {
+  left: 0;
+}
+.pos-right {
+  right: 0;
+}
+.item {
+  position: relative;
+  display: block;
+  min-height: 18px;
+  line-height: 18px;
+}
+.item:hover {
+  color: #4d8cd9;
+}
+.item.ative {
+  color: #4d8cd9;
+}
+.item .pos-left {
+  top: 10px;
+  left: 10px;
+}
+.item .pos-right {
+  top: 10px;
+  right: 10px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  color: #4d8cd9;
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.header .pos-left,
+.header .pos-right {
+  padding: 15px 10px;
+}
+.header .pos-left a,
+.header .pos-right a {
+  color: #4d8cd9;
+}
+.header .title {
+  height: 46px;
+  padding: 0 50px;
+  line-height: 46px;
+  font-size: 20px;
+  text-align: center;
+}
+.input-box {
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  padding-right: 26px;
+  background-color: #fff;
+  border: 1px solid #ededed;
+  border-radius: 6px;
+  -webkit-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
+}
+.input-box:hover {
+  border-color: #5e9df0;
+}
+.input-box .input {
+  width: 100%;
+  height: 18px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  line-height: 18px;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+.input-box .i-left,
+.input-box .i-right {
+  position: absolute;
+  top: 0;
+  padding: 10px 8px;
+  line-height: 16px;
+}
+.input-box .i-left {
+  left: 0;
+}
+.input-box .i-right {
+  right: 0;
+}
+.input-box .clear .icon {
+  margin-top: 3px;
+}
+.input-focus {
+  border-color: #5e9df0;
+}
+.search-box {
+  position: relative;
+  padding: 6px 10px 6px 52px;
+}
+.search-box .pos-left {
+  top: 4px;
+  padding: 12px 10px;
+  line-height: 16px;
+}
+.search-box .input-box {
+  padding-left: 26px; 
+}
+.search-box .i-search{
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(http://webmap1.map.bdstatic.com/wolfman/static/common/images/ui3/tools/suggestion-icon_013979b.png) no-repeat 0 -14px;
+}
+.listview {
+  position: relative;
+}
+.listview .item {
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #ededed;
+}
+.listview .item:hover {
+  background-color: #ededed;
+}
+.listview .item .address{
+  color: #666;
+}
+.bd-map {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+.bd-result  {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.marker {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  z-index: 6;
+  width: 20px;
+  height: 26px;
+  margin-top: -25px;
+  margin-left: -11px;
+}
+.marker b{
+  display:block;
+  width: 20px;
+  height: 26px;
+  background: url(http://api0.map.bdimg.com/images/marker_red_sprite.png) 0 0 no-repeat;
+}
+.tangram-suggestion-main{
+  z-index: 100;
+}
+.in {
+  -webkit-animation: 0.5s ease-out backwards;
+  animation: 0.5s ease-out backwards;
+}
+.out {
+  -webkit-animation: 0.6s ease-in forwards;
+  animation: 0.6s ease-in forwards;
+}
+.fadeLin {
+  -webkit-animation-name: fadeLin;
+  animation-name: fadeLin;
+}
+.fadeLout {
+  -webkit-animation-name: fadeLout;
+  animation-name: fadeLout;
+}
+/* 淡入-从左 */
+@-webkit-keyframes fadeLin {
+  0% {
+    -webkit-transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes fadeLin {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/* 淡出-从左 */
+@-webkit-keyframes fadeLout {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes fadeLout {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
